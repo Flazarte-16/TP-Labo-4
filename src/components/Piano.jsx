@@ -9,38 +9,38 @@ import laSound from "../sounds/LA-Piano.mp3";
 import siSound from "../sounds/SI-Piano.mp3";
 
 export const NotasMusicales = () => {
-  const notas = ["DO", "RE", "MI", "FA", "SOL", "LA", "SI"];
+  const notas = ["A", "S", "D", "J", "K", "L", "Ñ"];
   const teclas = ["a", "s", "d", "j", "k", "l", "ñ"];
   const [teclaPresionada, setTeclaPresionada] = useState(null);
   const [mostrarPiano, setMostrarPiano] = useState(false);
 
   const audio = (nota) => {
     switch (nota) {
-      case "DO":
+      case "A":
         new Audio(doSound).play();
         break;
 
-      case "RE":
+      case "S":
         new Audio(reSound).play();
         break;
 
-      case "MI":
+      case "D":
         new Audio(miSound).play();
         break;
 
-      case "FA":
+      case "J":
         new Audio(faSound).play();
         break;
 
-      case "SOL":
+      case "K":
         new Audio(solSound).play();
         break;
 
-      case "LA":
+      case "L":
         new Audio(laSound).play();
         break;
 
-      case "SI":
+      case "Ñ":
         new Audio(siSound).play();
         break;
       default:

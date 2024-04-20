@@ -16,7 +16,7 @@
   height: 100px;
   background-color: #f0f0f0;
   border: 1px solid #6b6969;
-  color: #f0f0f0;
+  color: #080808;
   border-radius: 50%;
   margin: 10px;
   line-height: 100px;
@@ -29,3 +29,4 @@
     color: #000; 
     box-shadow: 5px 10px 10px rgba(97, 37, 238, 0.582);
 }
+

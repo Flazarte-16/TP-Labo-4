@@ -13,7 +13,7 @@
     height: 200px;
     background-color: #f0f0f0;
     border: 1px solid #6b6969;
-    color: #f0f0f0;
+    color: #000000;
     border-radius: 0px 0px 10px 10px;
     display: flex;
     align-items: flex-end;
@@ -37,7 +37,7 @@
 
   .notas li.pressed {
     background: linear-gradient(to bottom right, #d060ec, #3f14ff);
-    color: #7e1bff00; 
+    color: #f7ededfa; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   

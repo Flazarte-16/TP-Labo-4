@@ -9,32 +9,32 @@ import tom1Sound from "../sounds/Tambor-Bateria-5.mp3";
 import tom2Sound from "../sounds/Platillo-Bateria-2.mp3";
 
 export const NotasBateria = () => {
-  const notas = ["Kick", "Snare", "Hi-Hat", "Crash", "Ride", "Tom1", "Tom2"];
+  const notas = ["Z", "X", "C", "V", "B", "N", "M"];
   const teclas = ["z", "x", "c", "v", "b", "n", "m"];
   const [teclaPresionada, setTeclaPresionada] = useState(null);
   const [mostrarBateria, setMostrarBateria] = useState(false);
 
   const audio = (nota) => {
     switch (nota) {
-      case "Kick":
+      case "Z":
         new Audio(kickSound).play();
         break;
-      case "Snare":
+      case "X":
         new Audio(snareSound).play();
         break;
-      case "Hi-Hat":
+      case "C":
         new Audio(hiHatSound).play();
         break;
-      case "Crash":
+      case "V":
         new Audio(crashSound).play();
         break;
-      case "Ride":
+      case "B":
         new Audio(rideSound).play();
         break;
-      case "Tom1":
+      case "N":
         new Audio(tom1Sound).play();
         break;
-      case "Tom2":
+      case "M":
         new Audio(tom2Sound).play();
         break;
       default:
