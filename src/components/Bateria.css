@@ -1,5 +1,6 @@
 .bateria {
   text-align: center;
+  width: auto;
 }
 
 .notas-bateria {
@@ -9,6 +10,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  width: auto;
 }
 
 .notas-bateria li {
@@ -30,3 +32,18 @@
     box-shadow: 5px 10px 10px rgba(97, 37, 238, 0.582);
 }
 
+@media (max-width: 1020px){
+
+  .bateria{
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+
+  .notas-bateria{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+}

@@ -37,7 +37,7 @@
 
   .notas li.pressed {
     background: linear-gradient(to bottom right, #d060ec, #3f14ff);
-    color: #f7ededfa; 
+    color: #f7ededd8; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
@@ -45,5 +45,17 @@
     margin-left: -1px;
   }
   
+@media (max-width: 1020px){
+  .piano{
+    display: flex;
+    width: auto;
+    height: auto;
+  }
 
+  .notas{
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+}
   
