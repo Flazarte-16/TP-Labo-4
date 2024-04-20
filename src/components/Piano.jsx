@@ -70,7 +70,7 @@ export const NotasMusicales = () => {
     };
   }, [notas, teclas]);
 
-  const handleNotaClick = (nota) => {
+  const handleTeclaClick = (nota) => {
     audio(nota);
   };
 
@@ -82,7 +82,7 @@ export const NotasMusicales = () => {
           <div>
             <ul className="notas">
               {notas.map((nota) => (
-                <li key={nota} className={teclaPresionada === nota ? "pressed" : ""} onClick={() => handelTeclaClick(nota)}>
+                <li key={nota} className={teclaPresionada === nota ? "pressed" : ""} onClick={() => handleTeclaClick(nota)}>
                   {nota}
                 </li>
               ))}
