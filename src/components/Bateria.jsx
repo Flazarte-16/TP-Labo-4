@@ -64,6 +64,10 @@ export const NotasBateria = () => {
     };
   }, [notas, teclas]);
 
+  const handelTeclaClick = (nota) => {
+    audio(nota)
+  }
+
   return (
     <section>
       <button className="instrument" onClick={() => setMostrarBateria(!mostrarBateria)}>Batería</button>
@@ -71,7 +75,7 @@ export const NotasBateria = () => {
         <div className="bateria">
           <ul className="notas-bateria">
             {notas.map((nota) => (
-              <li key={nota} className={teclaPresionada === nota ? "Bateria-pressed" : ""}>
+              <li key={nota} className={teclaPresionada === nota ? "Bateria-pressed" : ""} onClick={() => handelTeclaClick(nota)}>
                 {nota}
               </li>
             ))}

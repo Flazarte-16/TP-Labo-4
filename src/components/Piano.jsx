@@ -16,37 +16,37 @@ export const NotasMusicales = () => {
 
   const audio = (nota) => {
     switch (nota) {
-        case "DO":
-            new Audio(doSound).play();
-            break;
+      case "DO":
+        new Audio(doSound).play();
+        break;
 
-        case "RE":
-            new Audio(reSound).play();
-            break;
-        
-        case "MI":
-            new Audio(miSound).play();
-            break;
-            
-        case "FA":
-            new Audio(faSound).play();
-            break;
+      case "RE":
+        new Audio(reSound).play();
+        break;
 
-        case "SOL":
-            new Audio(solSound).play();
-            break;
+      case "MI":
+        new Audio(miSound).play();
+        break;
 
-         case "LA":
-            new Audio(laSound).play();
-            break;
-            
-        case "SI":
-            new Audio(siSound).play();
-            break;
-        default:
-            break;
+      case "FA":
+        new Audio(faSound).play();
+        break;
+
+      case "SOL":
+        new Audio(solSound).play();
+        break;
+
+      case "LA":
+        new Audio(laSound).play();
+        break;
+
+      case "SI":
+        new Audio(siSound).play();
+        break;
+      default:
+        break;
     }
-};
+  };
 
   useEffect(() => {
     const handleKeyPress = (event) => {
@@ -56,8 +56,6 @@ export const NotasMusicales = () => {
         audio(notas[indiceTecla]);
       }
     };
-    
-    
 
     const handleKeyNotPress = () => {
       setTeclaPresionada(null);
@@ -72,6 +70,10 @@ export const NotasMusicales = () => {
     };
   }, [notas, teclas]);
 
+  const handleNotaClick = (nota) => {
+    audio(nota);
+  };
+
   return (
     <section>
       <button className="instrument" onClick={() => setMostrarPiano(!mostrarPiano)}>Piano</button>
@@ -80,7 +82,7 @@ export const NotasMusicales = () => {
           <div>
             <ul className="notas">
               {notas.map((nota) => (
-                <li key={nota} className={teclaPresionada === nota ? "pressed" : ""}>
+                <li key={nota} className={teclaPresionada === nota ? "pressed" : ""} onClick={() => handelTeclaClick(nota)}>
                   {nota}
                 </li>
               ))}
@@ -88,7 +90,6 @@ export const NotasMusicales = () => {
           </div>
         </div>
       )}
-
 
     </section>
   );
