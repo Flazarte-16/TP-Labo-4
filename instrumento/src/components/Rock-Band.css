@@ -1,0 +1,26 @@
+.container {
+  background: rgb(255, 253, 253);
+  box-shadow: 4px 4px 10px rgb(79, 67, 238);
+  color: black;
+  padding: 16px 32px;
+  position: relative;
+  border-radius: 12px;
+  text-shadow: red;
+}
+
+.components-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.component{
+  box-shadow: 4px 4px 10px rgb(79, 67, 238);
+  padding: 16px 32px;
+  position: relative;
+  border-radius: 12px;
+}
+
+
+

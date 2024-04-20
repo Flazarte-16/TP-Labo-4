@@ -1,0 +1,49 @@
+
+.notas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-top: 20px;
+  }
+  .notas li {
+    width: 60px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #6b6969;
+    color: #f0f0f0;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+.instrument{
+  color: white;
+}
+
+.instrument:hover {
+  background: linear-gradient(to bottom right, #d060ec, #3f14ff);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+  .notas li.pressed {
+    background: linear-gradient(to bottom right, #d060ec, #3f14ff);
+    color: #7e1bff00; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .notas li:not(:first-child) {
+    margin-left: -1px;
+  }
+  
+
+  
