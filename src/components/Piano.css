@@ -46,5 +46,10 @@
   }
   
 @media (max-width: 600px){
+  .notas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
 }
   
