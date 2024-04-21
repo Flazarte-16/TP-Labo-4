@@ -22,3 +22,8 @@
   border-radius: 12px;
   margin-top: 20px;
 }
+
+h2 {
+  color: #070707;
+  text-shadow: 2px 2px 4px rgb(79, 67, 238);
+}

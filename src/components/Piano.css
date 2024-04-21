@@ -26,7 +26,7 @@
   
 .instrument{
   color: white;
-  
+  text-shadow: 2px 2px 4px rgb(162, 103, 240);
 }
 
 .instrument:hover {
