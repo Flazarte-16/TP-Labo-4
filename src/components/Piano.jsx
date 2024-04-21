@@ -29,19 +29,19 @@ export const NotasMusicales = () => {
         break;
 
       case "J":
-        new Audio(faSound).play();
-        break;
-
-      case "K":
         new Audio(solSound).play();
         break;
 
-      case "L":
+      case "K":
         new Audio(laSound).play();
         break;
 
-      case "Ñ":
+      case "L":
         new Audio(siSound).play();
+        break;
+
+      case "Ñ":
+        new Audio(faSound).play();
         break;
       default:
         break;

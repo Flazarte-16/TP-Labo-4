@@ -5,6 +5,9 @@ import { NotasBateria } from "./Bateria.jsx";
 import "../components/Rock-Band.css"
 
 export const PianoVirtual = () => {
+
+
+  
   return (
       <div className="container">
       <h2>Rock Band</h2>

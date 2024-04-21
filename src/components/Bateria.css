@@ -32,11 +32,16 @@
 }
 
 @media (max-width: 1020px){
-  
   .notas-bateria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   
+}
 
+@media (max-width: 420px){
+  .notas-bateria li {
+    width: 60px;
+    height: auto;
+  }  
 }

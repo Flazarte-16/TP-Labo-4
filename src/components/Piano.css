@@ -26,6 +26,7 @@
   
 .instrument{
   color: white;
+  
 }
 
 .instrument:hover {
@@ -51,5 +52,12 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
+}
+
+@media (max-width: 420px){
+  .notas li {
+    height: 120px;
+    width: 45px;
+  }
 }
   
