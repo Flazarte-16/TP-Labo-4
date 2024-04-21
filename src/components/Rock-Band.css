@@ -22,26 +22,3 @@
   border-radius: 12px;
 }
 
-
-@media (max-width: 1020px){
-  .container{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: auto;
-  }
-
-  .components-container{
-    display: flex;
-    justify-content: center;
-    height: auto;
-    width: auto;
-  }
-
-  .component{
-    display: flex;
-    height: auto;
-    width: auto;
-    font-size: 1rem;
-  }
-}

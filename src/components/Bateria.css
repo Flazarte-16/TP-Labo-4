@@ -10,12 +10,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  width: auto;
 }
 
 .notas-bateria li {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   background-color: #f0f0f0;
   border: 1px solid #6b6969;
   color: #080808;
@@ -33,16 +32,12 @@
 }
 
 @media (max-width: 1020px){
-
-  .bateria{
-    display: flex;
-    height: auto;
-    width: auto;
+  
+  .notas-bateria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
+  
 
-  .notas-bateria{
-    display: flex;
-    height: auto;
-    width: auto;
-  }
 }
