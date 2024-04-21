@@ -41,7 +41,7 @@
 
 @media (max-width: 420px){
   .notas-bateria li {
-    width: 60px;
+    width: 80px;
     height: auto;
     margin: 5px;
   }  
