@@ -43,5 +43,6 @@
   .notas-bateria li {
     width: 60px;
     height: auto;
+    margin: 5px;
   }  
 }
